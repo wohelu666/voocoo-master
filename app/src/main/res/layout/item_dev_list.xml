@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="105dp"
+    android:elevation="3dp"
+    android:id="@+id/mView"
+    android:layout_margin="7dp"
+    android:background="@drawable/rect_corner_white">
+
+    <TextView
+        android:id="@+id/tv_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="312321"
+        android:gravity="center"
+        android:textSize="9sp"
+        android:textColor="@color/color_ffffff"
+        android:background="@mipmap/label_1_ic"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_dev"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/dev_list_img"/>
+
+     <TextView
+         android:id="@+id/tv_name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="猫砂盆"
+         android:textColor="#4a4a4a"
+         android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Timo的"
+            android:visibility="visible"
+            android:layout_marginTop="3dp"
+            android:textColor="#a1aaaa"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_online"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@mipmap/dev_online_ic"/>
+
+    <ImageView
+        android:id="@+id/iv_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/dev_warning_ic"/>
+</RelativeLayout>

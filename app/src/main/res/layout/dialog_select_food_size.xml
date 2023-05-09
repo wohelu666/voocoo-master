@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rect_corner_white"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_bt_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="26dp"
+            android:text="@string/cancel"
+            android:textColor="#6A6B71"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/diaglog_bt_sure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="right|center_vertical"
+            android:paddingRight="26dp"
+            android:text="@string/ensure"
+            android:textColor="#28BD49"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FB7E37"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:text="约"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#6A6B71"
+        android:text="@string/text_feed_size_tips"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal">
+
+        <View
+            android:background="@drawable/bg_circle_select"
+            android:layout_width="70dp"
+            android:layout_centerInParent="true"
+            android:layout_height="70dp"/>
+
+        <cn.forward.androids.views.StringScrollPicker
+            android:id="@+id/picker_05_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:spv_alignment="center"
+            app:spv_disallow_intercept_touch="true"
+            app:spv_draw_bitmap_height="80dp"
+            app:spv_draw_bitmap_mode="size"
+            app:spv_draw_bitmap_width="80dp"
+            app:spv_is_circulation="true"
+            app:spv_max_line_width="300dp"
+            app:spv_max_text_size="24dp"
+            app:spv_min_text_size="14dp"
+            app:spv_orientation="horizontal"
+            app:spv_visible_item_count="7" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

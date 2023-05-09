@@ -1,0 +1,185 @@
+plugins {
+    id 'com.android.application'
+}
+android {
+    compileSdkVersion 31
+
+    ndkVersion '21.4.7075529'
+
+    defaultConfig {
+        applicationId "com.voocoo.pet"
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 26
+        versionName "2.2.0"
+        multiDexEnabled true
+        useLibrary 'org.apache.http.legacy'
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+        }
+        /*ndk {
+            // 设置支持的SO库架构，第三方给的so库哪几种架构，就配置这几种架构
+            abiFilters 'armeabi-v7a'
+        }*/
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : applicationId,
+                JPUSH_APPKEY  : "7abd5110b70fb4fb3b93f3c0", //极光开发平台上注册的包名对应的appkey.
+                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+
+                // 设置manifest.xml中的变量
+                XIAOMI_APPKEY : "5701986839010", // 小米平台注册的appkey,注意不要将前缀去掉 MI-appkey
+                XIAOMI_APPID  : "Q0k3a0JoMQ1ofXdz2tSXdg==", // 小米平台注册的appid，注意不要将前缀去掉 MI-appid
+
+                // 设置manifest.xml中的变量
+                OPPO_APPKEY   : "2d0c79f15578446cac0de083e20c44ae", // OPPO平台注册的appkey
+                OPPO_APPID    : "30512801", // OPPO平台注册的appid
+                OPPO_APPSECRET: "b34554528d76469ead8f3a56f1c7f2f3"//OPPO平台注册的appsecret
+        ]
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    packagingOptions {
+        doNotStrip '*/mips/*.so'
+        doNotStrip '*/mips64/*.so'
+    }
+    signingConfigs {
+        release {
+            storeFile file("../keystore.jks")//签名文件的path
+            storePassword "123456"
+            keyAlias "xuliwen"
+            keyPassword "123456"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+        }
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {
+        exclude 'META-INF/*'
+        exclude 'META-INF/NOTICE' // will not include NOTICE file
+        exclude 'META-INF/LICENSE' // will not include LICENSE file
+        exclude 'META-INF/INDEX.LIST' // will not include INDEX.LIST file
+    }
+}
+
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "com.google.android.material:material:1.3.0-alpha01"
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.2'
+    implementation project(path: ':shengshiqu')
+    testImplementation 'junit:junit:4.12'
+
+    //butterknife
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+
+    //multidex
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'androidx.annotation:annotation:1.0.0'
+
+    implementation 'com.github.skydoves:colorpickerview:1.0.8'
+    implementation 'com.berwin.cocoadialog:cocoadialog:1.3.3'
+    implementation files('libs/android-async-http-1.4.6.jar')
+    implementation 'org.apache.httpcomponents:httpcore:4.4.6'
+
+    implementation 'com.google.code.gson:gson:2.6.2'
+    implementation 'me.relex:circleindicator:2.1.4'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'com.github.bumptech.glide:okhttp3-integration:1.4.0@aar'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+//    implementation 'com.miomin:shswiperefreshlayout:1.3.0'
+    implementation 'com.aliyun.dpa:oss-android-sdk:+'
+
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.8.1'
+
+    //完整版引入
+    implementation 'com.github.CarGuo.GSYVideoPlayer:GSYVideoPlayer:v8.3.4-release-jitpack'
+
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation project(path: ':dialog')
+    implementation project(path: ':lib-qrcode-scan')
+    implementation project(path: ':androids')
+    implementation project(path: ':shswiperefresh')
+
+    implementation 'com.contrarywind:Android-PickerView:3.2.7'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'ru.alexbykov:nopermission:1.1.2'
+    //gif加载框架
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.7'
+
+    //3D地图so及jar
+//    implementation 'com.amap.api:3dmap:latest.integration'
+    //定位功能
+    //implementation 'com.amap.api:location:latest.integration'
+    //搜索功能
+//    implementation 'com.amap.api:search:latest.integration'
+
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+
+    implementation 'com.google.android.exoplayer:extension-rtmp:2.9.6'
+
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0-alpha'
+    implementation 'cn.jiguang.sdk:janalytics:2.1.6'
+//
+////    implementation 'cn.jiguang.sdk:jbasic:4.1.0'
+//
+//     implementation 'cn.jiguang.sdk:jpush:4.8.4'  // 此处以JPush 4.8.4 版本为例。
+//     implementation 'cn.jiguang.sdk:jcore:3.3.6'  // 此处以JCore 3.3.6 版本为例。
+
+    implementation 'cn.jiguang.sdk:jpush:5.0.0'
+    implementation 'com.hjq:toast:8.8'
+
+    // 友盟基础组件库（所有友盟业务SDK都依赖基础组件库）
+    implementation 'com.umeng.umsdk:common:9.5.2'// (必选)
+    implementation 'com.umeng.umsdk:asms:1.6.3'// asms包依赖必选
+
+    implementation 'com.umeng.umsdk:share-core:7.2.0'//分享核心库，必选
+    implementation 'com.umeng.umsdk:share-board:7.2.0'//分享面板功能，可选
+
+    //在线依赖目前支持QQ、微信、新浪微博、支付宝、钉钉；若需支持其他平台，请选择手动下载SDK
+
+    implementation 'com.umeng.umsdk:share-wx:7.1.6' //微信完整版
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.7.9'//微信官方依赖库，必选
+
+    //implementation 'com.tencent.bugly:crashreport:latest.release'
+    //implementation 'com.tencent.bugly:nativecrashreport:latest.release'
+
+    implementation 'com.zkk.view:ZkkRulerView:1.0.0'
+
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+
+    implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'
+
+    implementation 'com.tencent:mmkv-static:1.2.4'
+
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.9'
+
+    implementation "com.github.kongzue.DialogX:DialogX:0.0.47"
+}

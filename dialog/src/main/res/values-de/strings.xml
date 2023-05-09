@@ -1,0 +1,8 @@
+<resources>
+    <string name="dialogutil_btn_sure">determine</string>
+    <string name="dialogutil_btn_cancel">cancel</string>
+    <string name="dialogutil_btn_neutral">Siehe</string>
+    <string name="dialogutil_loading">laden</string>
+    <string name="dialogutil_uploading">Vorwärts</string>
+    <string name="dialogutil_downloading">download</string>
+</resources>

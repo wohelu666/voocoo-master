@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <com.scu.miomin.shswiperefresh.core.SHSwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        app:guidance_text_color="@color/color_tab_select"
+        app:guidance_view_bg_color="@android:color/transparent"
+        app:load_text="加载更多"
+        app:progress_bar_color="@color/color_tab_select"
+        app:refresh_text="下拉刷新"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.scu.miomin.shswiperefresh.core.SHSwipeRefreshLayout>
+</LinearLayout>

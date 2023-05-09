@@ -1,0 +1,697 @@
+<resources>
+    <string name="app_name">VOOCOO蔚刻</string>
+    <string name="exit_app">再按一次返回退出VOOCOO蔚刻</string>
+    <string name="login_title">欢迎登录VOOCOO蔚刻</string>
+    <string name="one_key_login">本机号码一键登录</string>
+    <string name="use_other_phone">使用其他手机号码</string>
+
+    <string name="input_phone_hint">请输入手机号</string>
+    <string name="input_pwd_hint">请输入密码</string>
+    <string name="login">登录</string>
+    <string name="pwd_login">密码登录</string>
+    <string name="code_login">验证码登录</string>
+    <string name="forget_pwd">忘记密码</string>
+    <string name="register">注册</string>
+    <string name="other_login_way">其他登录方式</string>
+    <string name="get_code">获取验证码</string>
+    <string name="input_code">输入验证码</string>
+    <string name="get_code_again">重新获取验证码</string>
+    <string name="input_code_hint">请输入验证码</string>
+    <string name="code_is_send_to">验证码已发送至</string>
+    <string name="register_user">注册账号</string>
+    <string name="register_and_login">注册并登录</string>
+    <string name="input_code_please">请输入验证码</string>
+    <string name="input_pwd_please">请输入密码</string>
+    <string name="input_old_pwd_please">请输入旧密码</string>
+    <string name="input_pwd_re_please">请再次输入密码</string>
+    <string name="help">帮助反馈</string>
+    <string name="ensure">确定</string>
+    <string name="input_phone_error">请输入合法的手机号</string>
+    <string name="input_password_error">请输入6到16位长度的密码</string>
+    <string name="password_not_equal_ensure_password">新密码与确认新密码不一致</string>
+    <string name="register_success">注册成功</string>
+    <string name="login_success">登录成功</string>
+    <string name="forget_success">忘记成功</string>
+    <string name="modity_success">修改成功</string>
+    <string name="next">下一步</string>
+    <string name="complete">完成</string>
+    <string name="device_connting">正在连接设备, 请稍后...</string>
+    <string name="device_is_near">请确保设备已处于配置状态, 且位于手机附近</string>
+    <string name="config_tips">配网过程中，手机无法连接网络为正常现象，请不用处理</string>
+    <string name="not_support_5g">暂不支持5G频段WiFi,请选择2.4G频段Wi-Fi热点</string>
+    <string name="please_connect_wifi">请连接WiFi</string>
+    <string name="please_connect_wifi_pwd">点击输入密码</string>
+    <string name="add_success_title">配置成功</string>
+    <string name="add_success_tips">来给你的设备起个名字吧~</string>
+    <string name="device_near_luy">请将设备尽量靠近路由器</string>
+    <string name="device_near_luy_tips1">连接设备中...（连接设备成功）</string>
+    <string name="device_near_luy_tips2">向设备传输信息中...（向设备传输信息成功）</string>
+    <string name="device_near_luy_tips3">设备连接网络中</string>
+    <string name="device_near_luy_tips4">获取设备状态中</string>
+
+    <string name="tab_home">首页</string>
+    <string name="tab_mail">商城</string>
+    <string name="tab_mine">我的</string>
+
+    <string name="text_my_pet">我的宠物</string>
+    <string name="text_add">添加宠物</string>
+    <string name="text_my_news">我的动态</string>
+    <string name="text_my_collection">我的收藏</string>
+    <string name="text_my_shop">商城</string>
+    <string name="text_after_sale">宠物设备专属售后</string>
+
+    <string name="text_setting">设置</string>
+    <string name="text_msg_push">消息推送</string>
+    <string name="text_auto_play">移动网络下自动播放视频</string>
+    <string name="text_clear_cache">清除缓存</string>
+    <string name="text_app_version">APP版本</string>
+    <string name="text_help">帮助与反馈</string>
+    <string name="text_about">关于我们</string>
+    <string name="text_privacy">隐私政策</string>
+    <string name="text_license">用户协议</string>
+    <string name="text_quit">退出账号</string>
+    <string name="text_cancel_account">注销账号</string>
+
+    <string name="text_home_input_hint">搜索更多有趣萌宠</string>
+    <string name="text_open_all_comment">展开所有评论</string>
+    <string name="text_follow">+关注</string>
+    <string name="text_follow2">关注</string>
+    <string name="text_is_follow">已关注</string>
+    <string name="text_frident">粉丝</string>
+    <string name="text_feel_good">人觉得很赞</string>
+
+    <string name="text_my_dev">我的设备</string>
+    <string name="text_recommend_dev">推荐设备</string>
+    <string name="text_weight_today">今日体重</string>
+    <string name="text_sport_today">今日运动量</string>
+    <string name="text_health_today">今日健康</string>
+    <string name="text_litter_allowance">猫砂余量</string>
+
+    <string name="text_turn_on">开机</string>
+    <string name="text_turn_off">关机</string>
+    <string name="text_clean">手动清理</string>
+    <string name="text_sand_change">一键换砂</string>
+    <string name="text_add_sand">加砂模式</string>
+
+    <string name="text_defecation">排便</string>
+    <string name="text_average_duration">平均时长</string>
+    <string name="text_health_advice">健康建议</string>
+    <string name="text_usage_record">使用记录</string>
+
+    <string name="text_auto_setting">自动清理延迟设置</string>
+    <string name="text_clean_setting">集便抽屉清理提醒</string>
+    <string name="text_clean_setting2">集便抽屉</string>
+    <string name="text_lost_warn">缺砂提醒</string>
+    <string name="text_come_warn">猫咪来过提醒</string>
+    <string name="text_share">共享设备</string>
+    <string name="text_use_explain">使用说明</string>
+    <string name="text_unbind">解除绑定</string>
+    <string name="text_tips_unbind">解绑设备会清除设备上的历史记录，请问是否解绑?</string>
+    <string name="text_donot_disturb">勿扰模式</string>
+    <string name="text_start_time">开启时间</string>
+    <string name="text_end_time">结束时间</string>
+
+    <string name="text_news">动态</string>
+    <string name="text_comment">评论</string>
+    <string name="text_pet_input_hint">搜索更多萌宠趣闻</string>
+    <string name="text_dynamic_message">动态消息</string>
+    <string name="text_comment_your_dynadic">位用户评论了你的动态,去看看吧</string>
+    <string name="text_resp">回复</string>
+    <string name="text_input_comment">说点什么...</string>
+    <string name="text_content_detile">文章详情</string>
+
+    <string name="text_head">头像</string>
+    <string name="text_user_id">用户ID</string>
+
+    <string name="text_sex">性别</string>
+    <string name="text_modity_pwd">修改密码</string>
+    <string name="text_bind_email">邮箱绑定</string>
+    <string name="text_phone_num">手机号</string>
+    <string name="text_bind_wechat">微信</string>
+    <string name="text_bind_weibo">微博绑定</string>
+    <string name="text_birthday">生日</string>
+    <string name="text_city">当前城市</string>
+
+    <string name="text_personal_info">个人信息</string>
+    <string name="text_send">发送</string>
+    <string name="text_publish">发布</string>
+    <string name="text_hint_feedback">您有什么问题或者什么想法？可以在此处向我们反馈</string>
+
+    <string name="text_upload_pic">上传图片</string>
+    <string name="post_photo_error_title">上传失败</string>
+
+    <string name="post_photo_error_content">上传头像失败，请重试！</string>
+    <string name="alert">提示</string>
+    <string name="retry">重试</string>
+    <string name="no_permission">没有权限</string>
+    <string name="text_denied_permission">您拒绝了给予权限</string>
+    <string name="prompt_title">提示</string>
+
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="hint_nick_name">请输入昵称</string>
+    <string name="hint_nick_name_too_long">昵称过长,最大长度为10</string>
+    <string name="hint_kg">请输入体重</string>
+
+    <string name="set_nick_name">设置昵称</string>
+    <string name="text_privacy_protocol">隐私政策</string>
+
+    <string name="text_privacy_protocol_tips">我们深知隐私对您的重要性，为了更全面地呈现我们我们收集和使用您个人信息的相关情况，我们更具最新法律法规的要求，对隐私政策进行了详细的修订。当您点击[同意] 即表示您已充分阅读、理解并接受更新过的《隐私政策》的全部内容。请花一些时间熟悉我们的隐私政策，如果您有任何问题，请随时联系我们</string>
+    <string name="text_agree">同意</string>
+    <string name="text_not_agress">不同意</string>
+    <string name="text_readed">已阅读和同意</string>
+    <string name="device_connect_fail">配置失败</string>
+    <string name="device_connect_success">设备连接成功</string>
+    <string name="add_device_fail_tips">1.确认设备已处于待配置状态\n\n2.确认手机与设备在5米以内的距离\n\n3.将设备先断电,再通电,然后重新添加设备</string>
+    <string name="change_info_to_dev">向设备传输信息成功</string>
+    <string name="dev_connect_net_success">设备连上网络成功</string>
+    <string name="dev_bind_fail">设备绑定失败</string>
+
+    <string name="hint_email">请输入正确邮箱</string>
+
+    <string name="text_day">陪伴我%1$d天</string>
+
+    <string name="text_photo_with_pet">给宠物拍个照吧</string>
+    <string name="text_sterilization">是否绝育</string>
+    <string name="text_date_of_adoption">收养日期</string>
+    <string name="text_weight">体重</string>
+    <string name="text_weight2">重量</string>
+    <string name="text_sterilization_done">已绝育</string>
+    <string name="text_sterilization_not">未绝育</string>
+    <string name="text_upload_head">请上传头像</string>
+
+    <string name="hint_pet_type">请选择品种</string>
+    <string name="hint_birthday">请选择生日</string>
+    <string name="hint_ate_of_adoption">请选择收养日期</string>
+    <string name="hint_input">请输入</string>
+    <string name="hint_input_email">请输入邮箱</string>
+    <string name="text_contact_phone">联系手机号*</string>
+    <string name="text_input_phone">请输入手机号</string>
+    <string name="text_input_phone_right">请输入正确的手机号</string>
+    <string name="text_feedback_success">反馈成功</string>
+    <string name="text_status_off">关机</string>
+
+    <string name="text_status_on">开机</string>
+    <string name="text_status_add">请打开猫砂盆上盖及防砂门,\n从上方添加猫砂！</string>
+    <string name="text_status_change">一键换砂中</string>
+    <string name="text_status_clean">正在清理中</string>
+    <string name="text_status_wc">猫咪正在如厕中</string>
+    <string name="text_error_turn">猫砂桶转动过程中有猫咪跳入或检查到有异常重量报警，猫砂桶停转并返回原位</string>
+
+    <string name="text_error_weight">需要人到机器处检查异常，看机器四脚是否水平，机器不能放在地毯等软性地面上，不能贴着墙壁放置</string>
+    <string name="text_error_door">集便仓有异物阻挡自动门无法正常开合，机器停止工作要等人去处理</string>
+    <string name="text_error_install">请检查防砂门、上盖、集便仓等组件是否已正确安装</string>
+    <string name="text_error_anti_pich">防夹装置报警，请马上前往排查，确保猫咪安全</string>
+    <string name="text_litter_box">猫砂盆</string>
+
+    <string name="text_select_pet_to_record">选择宠物添加成长记录</string>
+
+    <string name="text_idea_now">这一刻的想法...</string>
+    <string name="text_hint_ide">请输入您的想法</string>
+    <string name="text_publish_success">发布成功</string>
+    <string name="text_select">已选</string>
+    <string name="text_turn_on_first">请开机</string>
+
+    <string name="text_dev_runing">设备运行中</string>
+    <string name="text_tips_add">请加好猫砂后手动退出加砂模式</string>
+
+    <string name="text_min">分钟</string>
+    <string name="text_end_must_big_to_start">结束时间必须开始时间</string>
+
+    <string name="text_record_head">%1$s来过    %2$s</string>
+    <string name="text_record_content">停留%1$s秒, 体重%2$skg</string>
+    <string name="text_record_content2">停留%1$s秒, 体重%2$skg, 便便%3$sg</string>
+
+    <string name="text_set_dev_name">设置设备名称</string>
+    <string name="text_input_dev_name">请输入设备名称</string>
+    <string name="text_input_dev_name_too_long">设备名称过长,最大长度为10</string>
+
+    <string name="text_save">保存</string>
+    <string name="text_cancel">取消</string>
+    <string name="text_online">在线</string>
+    <string name="text_offline">设备离线</string>
+    <string name="text_offline2">离线</string>
+    <string name="text_share2">分享</string>
+
+    <string name="text_not_dev">还没有添加设备哦,去添加</string>
+
+    <string name="text_add_dev_tips">插上电源后请长按设备开关5秒，待屏幕显示为\n配网模式,松开开关进入配网模式</string>
+    <string name="text_ensure_dev">屏幕已显示为配网模式</string>
+    <string name="text_dev_offline">设备离线</string>
+    <string name="text_dev_is_offline">设备已离线</string>
+    <string name="text_ensure_change_mode">是否切换模式？</string>
+    <string name="text_set_fail">设置失败</string>
+
+    <string name="text_cat_type">猫砂种类</string>
+    <string name="text_full_sand_weight">满砂重量(g)</string>
+    <string name="text_lock_sand_weight">缺砂重量(g)</string>
+    <string name="text_sand_tips">不同猫砂已满提醒和缺砂提醒重量会不一样，请合理选择或通过自定义手动设值</string>
+    <string name="text_add_x_device">已添加%1$s台设备</string>
+    <string name="text_no">暂无</string>
+
+    <string-array name="select_picture_array">
+        <item>相册</item>
+        <item>照相机</item>
+    </string-array>
+
+    <string-array name="select_shop_type">
+        <item>天猫</item>
+        <item>京东</item>
+        <item>取消</item>
+    </string-array>
+
+    <string-array name="select_clean_delay_time">
+        <item>1分钟</item>
+        <item>2分钟</item>
+        <item>5分钟</item>
+        <item>10分钟</item>
+    </string-array>
+
+    <string-array name="select_cat_sand_type">
+        <item>豆腐砂</item>
+        <item>膨润土砂</item>
+        <item>混合砂</item>
+        <item>自定义</item>
+    </string-array>
+
+    <string name="cat_sand_type1">豆腐砂</string>
+    <string name="cat_sand_type2">膨润土砂</string>
+    <string name="cat_sand_type3">混合砂</string>
+    <string name="cat_sand_type4">自定义</string>
+
+
+    <string name="input_username_hint">请输入账号</string>
+    <string name="input_username_error">请输入合法的账号</string>
+
+    <string name="please_try_title">服务器连接失败，请检查：</string>
+    <string name="please_try_tips1">1.Wi-Fi密码是否正确</string>
+    <string name="please_try_tips2">2.路由器网络正常</string>
+    <string name="please_try_tips3">3.请检查路由器设置，黑白名单或更换Wi-Fi</string>
+
+    <string name="text_full_sand_weight2">满砂重量：%1$sg</string>
+    <string name="text_lock_sand_weight2">缺砂重量：%1$sg</string>
+
+    <string name="text_device_mac">设备ID: %1$s</string>
+    <string name="text_china">中国</string>
+    <string name="text_overseas">海外</string>
+
+    <string name="share_user_list">分享用户列表</string>
+    <string name="share_to_friend">分享给好友</string>
+    <string name="cancel_share">取消共享</string>
+    <string name="share_to">分享于</string>
+    <string name="share_tips">请输入待分享用户手机号/邮箱</string>
+
+    <string name="text_del_pet">删除宠物</string>
+    <string name="text_del_pet_tips">是否确认删除删除宠物?</string>
+
+    <string name="text_check_title">版本检测</string>
+    <string name="text_check_content">检查到有新的版本可以进行升级.</string>
+
+    <string name="scan">扫一扫</string>
+    <string name="text_sel_dev">选择设备</string>
+    <string name="text_positioner">健康定位器</string>
+    <string name="text_cat_wc">全自动猫厕所</string>
+    <string name="tips_scan_qrcode">将二维码放入框内，即可自动扫描</string>
+    <string name="text_open_light">打开手电筒</string>
+
+    <string name="text_bind_success">绑定成功</string>
+    <string name="text_bind_pet_success">绑定宠物成功</string>
+    <string name="text_distance">距离</string>
+    <string name="text_today_date">今日数据</string>
+    <string name="text_moving_distance">移动距离</string>
+    <string name="text_burn_calories">消耗卡路里</string>
+    <string name="text_rest_time">休息时间</string>
+    <string name="text_sport_time">运动时间</string>
+
+    <string name="text_signal_lamp">信号灯</string>
+    <string name="text_buzzer">蜂鸣器</string>
+    <string name="text_dog_rope">狗绳</string>
+    <string name="text_find_pet">近距离寻宠</string>
+    <string name="text_urgent_find_pet">紧急寻宠</string>
+    <string name="text_network_find_pet">网络寻宠</string>
+
+    <string name="text_sel_bind_pet">选择绑定的宠物</string>
+    <string name="text_electronic_fence_setting">电子围栏设置</string>
+    <string name="text_bind_pet">绑定宠物</string>
+    <string name="text_electronic_fence_reminder">电子围栏提醒</string>
+    <string name="text_device_imei">设备Imei: %1$s</string>
+    <string name="text_ble_connect_success">蓝牙连接成功</string>
+    <string name="text_please_connect_dev_by_ble">请先连接蓝牙设备</string>
+
+    <string name="text_step">步</string>
+
+    <string name="insufficient_cat_litter_tips">猫砂不足，请加猫砂</string>
+
+    <string name="tips_network_find_pet">将在浏览器打开网络寻宠页面，请将此页面分享给好友或其他人协助寻找它</string>
+
+    <string name="start_navigation">开始导航</string>
+    <string name="map_track">地图轨迹</string>
+
+    <string name="text_set_timezone">时区设置</string>
+    <string name="text_read_understand">请充分阅读并理解</string>
+    <string name="text_privacy2">《隐私政策》</string>
+    <string name="text_and">与</string>
+    <string name="text_license2">《用户协议》</string>
+    <string name="text_read_understand2">我已经阅读并同意</string>
+
+    <string name="cat_litter_basin_guide_title">设置一下，开始使用猫砂盆</string>
+    <string name="set_cat_type">设置猫砂种类</string>
+    <string name="set_donot_disturb">设置勿扰模式</string>
+    <string name="start_use">开始使用</string>
+
+    <string name="toilet_bin_is_full">集便仓已满，请及时清理</string>
+    <string name="insufficient_cat_litter">猫砂不足，请加猫砂</string>
+    <string name="cat_litter_is_full">猫砂已满，请停止加砂，并退出加砂模式</string>
+
+    <string name="text_ensure_dev_enter_config">请确认设备进入配网模式</string>
+    <string name="text_gps_tips">是否同意打开GPS</string>
+    <string name="text_time">时间</string>
+    <string name="text_min2">分</string>
+    <string name="text_hour2">时</string>
+
+    <string name="text_cat">猫</string>
+    <string name="text_dog">狗</string>
+
+    <string name="text_baike">宠物百科</string>
+    <string name="text_home_share">家庭共享</string>
+    <string name="text_feedback">意见反馈</string>
+    <string name="text_about_us">关于我们</string>
+    <string name="text_follow_us">关注我们</string>
+    <string name="text_system_setting">系统设置</string>
+    <string name="text_add_dev">添加设备</string>
+    <string name="text_your_job">您的职业</string>
+
+    <string name="text_head_and_name">头像和昵称</string>
+    <string name="text_nickname">昵称</string>
+    <string name="text_pin">品种</string>
+    <string name="text_input_nickname">请输入昵称</string>
+    <string name="text_input_pin">请输入品种</string>
+
+    <string name="text_pet_type">宠物类型</string>
+    <string name="text_sel_pet_type">请选择您的宠物类型</string>
+    <string name="text_pet_sex">宠物性别</string>
+    <string name="text_sel_pet_sex">请选择您的宠物性别</string>
+    <string name="text_pet_age">宠物年龄</string>
+    <string name="text_pet_weight">宠物体重</string>
+
+    <string name="text_wait_to_do">待办事项</string>
+    <string name="text_not_wait_to_do">您的设备运行正常，无待办事项。</string>
+    <string name="text_my_devices">我的设备</string>
+    <string name="text_bind_devices">(已绑定%1$d台设备)</string>
+    <string name="text_tag1">猫咪今日如厕</string>
+    <string name="text_drink_water_time">今日饮水次数</string>
+    <string name="text_feed_time">今日已出粮</string>
+    <string name="text_feed_eat_time">今日进食次数</string>
+    <string name="text_tag2">平均停留时长</string>
+    <string name="text_water_left">净水箱余水量</string>
+    <string name="text_next_feed">下次出粮：</string>
+
+    <string name="text_clean_water_tank">净水箱水量</string>
+    <string name="text_waste_water_tank">废水箱容量</string>
+    <string name="text_night_mode">夜间模式</string>
+    <string name="text_water_night_mode">夜间勿扰</string>
+    <string name="text_ganying_mode">感应模式</string>
+    <string name="text_smart_mode">智能模式</string>
+    <string name="text_out_water_set">出水量设置</string>
+    <string name="text_out_water_set_tips">仅限于智能模式下出水量的设置</string>
+
+    <string name="text_one_cat_mode">单猫家庭</string>
+    <string name="text_one_dog_mode">单狗家庭</string>
+    <string name="text_two_cat_mode">两猫家庭</string>
+    <string name="text_three_cat_mode">三猫家庭</string>
+
+    <string name="text_cat_mode">猫模式</string>
+    <string name="text_dog_mode">狗模式</string>
+
+    <string name="text_compare_yesterday">较昨日同期</string>
+    <string name="text_compare_last_week">较上周同期</string>
+    <string name="text_times">次</string>
+    <string name="text_clean_water_status1">充足</string>
+    <string name="text_clean_water_status2">不足</string>
+    <string name="text_clean_water_status3">缺水</string>
+    <string name="text_waste_water_status1">充足</string>
+    <string name="text_waste_water_status2">满载</string>
+    <string name="text_waste_water_status_tips">请及时颠倒废水</string>
+    <string name="text_clean_water_status_tips">请及时添水</string>
+
+    <string name="text_residual_filter_element">滤芯剩余：%1$s</string>
+    <string name="text_battery">电池电量：%1$s</string>
+    <string name="text_days">%1$s天</string>
+    <string name="text_refresh">刷新</string>
+    <string name="text_filter_element">滤芯剩余</string>
+    <string name="text_function_of_matched_filter_element">配套滤芯的作用</string>
+    <string name="text_buy_filter_element">购买滤芯</string>
+    <string name="text_current_status">当前状态：</string>
+    <string name="text_instructions">使用说明</string>
+    <string name="text_night_mode_tips">开启后，将在设定时间内不工作</string>
+    <string name="text_wifi_setting">Wi-Fi配置</string>
+    <string name="text_time_setting">免打扰时间</string>
+    <string name="text_firmware_update">固件升级</string>
+    <string name="text_del_dev">删除设备</string>
+    <string name="hint_input_dev_name">请输入设备名称</string>
+    <string name="text_water_records">饮水记录</string>
+    <string name="text_water_datas">饮水数据</string>
+    <string name="text_feed_datas">喂食数据</string>
+    <string name="text_today_drink_time">今日饮水次数</string>
+    <string name="text_today_drink">今日饮水</string>
+    <string name="text_cat_today_drink">猫咪今日饮水</string>
+    <string name="text_cat_week_drink">猫咪本周饮水</string>
+    <string name="text_cat_month_drink">猫咪本月饮水</string>
+    <string name="text_cat_year_drink">猫咪今年饮水</string>
+    <string name="text_see_more">查看更多</string>
+    <string name="text_type_day">日</string>
+    <string name="text_week">周</string>
+    <string name="text_month">月</string>
+    <string name="text_year">年</string>
+
+    <string name="text_today_eat">今日进食</string>
+    <string name="text_out_food">已出粮：</string>
+    <string name="text_today_plan_food">今日还需出粮：</string>
+    <string name="text_next_plan_food">下次出粮：</string>
+    <string name="text_left_food">当前碗内余量</string>
+    <string name="text_plan_out_food">计划出粮</string>
+    <string name="text_battery2">电池电量</string>
+    <string name="text_chongdian">请及时充电</string>
+    <string name="text_barrel_margin">桶内余量</string>
+    <string name="text_adequate">充足</string>
+    <string name="text_insufficient">不足</string>
+    <string name="text_barrel_margin_tips">请及时添加粮</string>
+    <string name="text_add_food">立即加餐</string>
+    <string name="text_food_plan">喂食计划</string>
+    <string name="text_food_records">喂食记录</string>
+    <string name="text_today_out_food">今日出粮</string>
+    <string name="text_week_out_food">本周出粮</string>
+    <string name="text_month_out_food">本月出粮</string>
+    <string name="text_year_out_food">今年出粮</string>
+    <string name="text_today_eat_food">今日进食</string>
+    <string name="text_week_eat_food">本周进食</string>
+    <string name="text_month_eat_food">本月进食</string>
+    <string name="text_year_eat_food">今年进食</string>
+    <string name="text_desiccant_allowance">干燥剂余量</string>
+    <string name="text_function_of_matched_desiccant">配套干燥剂的作用</string>
+    <string name="text_buy_desiccant">购买干燥剂</string>
+    <string name="text_left_desiccant">干燥剂剩余</string>
+    <string name="text_child_lock">童锁</string>
+    <string name="text_feed_immediately">立即喂食</string>
+    <string name="text_feed_immediately_tips">每份约10g</string>
+    <string name="text_plan_start">计划开启</string>
+    <string name="text_start_recycle">启动周期</string>
+    <string name="text_add_feed_plan">添加喂食计划</string>
+    <string name="text_update_feed_plan">修改喂食计划</string>
+    <string name="text_get_smart_feed_plan">获取智能喂食单</string>
+    <string name="text_sava_plan">保存计划，开始使用</string>
+    <string name="text_not_set_plan">暂不设置，开始使用</string>
+    <string name="text_food_times">喂食次数</string>
+    <string name="text_food_all_times">喂食总量</string>
+    <string name="text_smart_feed_plan">智能喂食单</string>
+    <string name="text_today_in_food">今日进食</string>
+
+    <string name="text_day7">周日</string>
+    <string name="text_day1">周一</string>
+    <string name="text_day2">周二</string>
+    <string name="text_day3">周三</string>
+    <string name="text_day4">周四</string>
+    <string name="text_day5">周五</string>
+    <string name="text_day6">周六</string>
+
+    <string name="text_label">标签</string>
+    <string name="text_feed_size">喂食量</string>
+    <string name="text_confirm">确认</string>
+    <string name="text_del">删除</string>
+    <string name="text_feed_size_tips">实际结果与主粮颗粒大小及密度相关</string>
+    <string name="text_scan_dev">正在搜索附近的设备</string>
+    <string name="text_wifi_config">Wi-Fi配置</string>
+    <string name="text_not_support_5g">提示：不支持5G Wi-Fi</string>
+    <string name="text_ensure_connect">确认连接</string>
+    <string name="text_connect_with_dev">与设备建立连接</string>
+    <string name="text_connect_with_dev_tips">请将手机靠近设备</string>
+    <string name="text_dev_name">设备名称</string>
+    <string name="text_set_wifi">设置工作Wi-Fi</string>
+    <string name="text_sel_family_mode_tips">为了给您的宠物更好的饮水体验，请根据您的实际情况进行选择~您的选择会影响饮水机的出水量</string>
+    <string name="text_reminder">温馨提示：</string>
+    <string name="text_reminder_tips">如果您家里有4只以上猫咪或者多狗家庭，建议您购 置多台饮水机设备给毛孩子使用哦~</string>
+    <string name="text_reminder_tips2">如果您是多宠家庭，请选择狗模式哦~</string>
+    <string name="text_start_use">开始使用</string>
+    <string name="text_single_cat">单猫家庭</string>
+    <string name="text_single_dog">单狗家庭</string>
+    <string name="text_two_cat">2只猫咪</string>
+    <string name="text_three_cat">3只猫咪</string>
+    <string name="text_sel_mode">选择模式</string>
+    <string name="text_sel_family">选择家庭</string>
+    <string name="text_smart_water">智能饮水机</string>
+    <string name="text_auto_feeder">自动喂食器</string>
+
+    <string name="text_agree_first">请先同意隐私政策和用户协议</string>
+    <string name="text_ensure_quit">是否退出账号?</string>
+    <string name="text_ensure_cancel">注销账户将会清除所有数据且不可恢复，注销前请删除已绑定的所有设备，您确认注销吗?</string>
+    <string name="text_ensure_unbind">是否解除微信绑定?</string>
+    <string name="text_not_bind">未绑定</string>
+    <string name="text_binded">已绑定</string>
+    <string name="text_ensure_bind">确认绑定</string>
+    <string name="text_ensure_connect2">确认关联</string>
+    <string name="text_bind_your_phone">绑定您的手机号</string>
+    <string name="text_commit">提交</string>
+    <string name="text_modify_phone">修改手机号</string>
+    <string name="text_ensure_del_feed_plan">确定删除该喂食计划吗?</string>
+    <string name="text_ensure_back">当前喂食计划未保存，请点击保存后离开。</string>
+    <string name="text_ensure_close_plan">关闭后，将无法自动出餐，确认要关闭吗？</string>
+    <string name="text_ensure_open_plan">已为您开启喂食计划</string>
+    <string name="text_your_pet">您的宠物年龄</string>
+    <string name="text_age">年龄</string>
+    <string name="text_pet_info">宠物信息</string>
+    <string name="text_ensure_del_pet">删除会导致该宠物在蔚刻生成的记录丢失！请谨慎操作！</string>
+    <string name="hint_brand">请输入品种</string>
+    <string name="hint_brand_too_long">品种过长,最大长度为10</string>
+    <string name="text_not_pet">您还未添加过爱宠的信息哦，请添加宠物，设备将根据爱宠的信息生成更精准的喂食计划</string>
+    <string name="text_use_smart_feed_plan_tips">已有喂食计划，是否覆盖原有喂食计划？</string>
+    <string name="text_ensure_del_dev">确认删除设备嘛？</string>
+    <string name="text_del_dev_tips">删除设备后，设备将无法进行远程控制。</string>
+    <string name="text_water_default_name">「猫狗双模式」智能饮水机</string>
+    <string name="text_feeder_default_name"> 蔚刻「甄鲜桶」</string>
+    <string name="text_not_plan_yet">暂无喂食计划</string>
+    <string name="text_work1">销售</string>
+    <string name="text_work2">会计</string>
+    <string name="text_work3">行政</string>
+    <string name="text_work4">教师</string>
+    <string name="text_work5">护士</string>
+    <string name="text_work6">医生</string>
+    <string name="text_work7">其他</string>
+    <string name="text_child_lock__tips">开启后设备上的按钮不可用</string>
+    <string name="text_feed_in_num">今日进食量</string>
+    <string name="text_week_feed_in_num">本周进食量</string>
+    <string name="text_not_dev_share">没有共享设备</string>
+
+    <string name="text_gzh">官方公众号</string>
+    <string name="text_qdf">去打分</string>
+    <string name="text_gzh_tips">公众号：VOOCOO蔚刻已复制，去微信可直接粘贴搜索</string>
+    <string name="text_go_wechat">去微信</string>
+
+    <string name="text_huiyuan">会员中心</string>
+    <string name="text_shop">购物车</string>
+    <string name="text_order_manager">订单管理</string>
+
+    <string name="text_one_out_water">单次出水量</string>
+    <string name="text_day_all_out_water">日总出水量</string>
+    <string name="text_out_water_use_day">预计净水箱使用天数</string>
+    <string name="text_out_water_text1">适合10kg以下小型犬</string>
+    <string name="text_out_water_text2">适合10～13kg以下中型犬</string>
+    <string name="text_out_water_text3">适合13～15kg以下中型犬</string>
+    <string name="text_out_water_text4">适合15～17kg以下小型犬</string>
+    <string name="text_out_water_tips">体重推荐值仅供参考，请根据您爱宠的实际饮水需求进行设置哦~</string>
+    <string name="text_set_mode_tips">智能模式为定时出水模式；感应模式为感应出水模式，请您根据需求进行选择~</string>
+
+    <string name="text_ensure_next_step">已确认上述步骤</string>
+    <string name="text_cancel_share_tips">是否删除该帐户的使用权限？</string>
+
+    <string name="text_cancel_account_title">是否确认注销账户？</string>
+    <string name="text_cancel_account_tips">蔚刻已经陪伴您和您的宠物%1$s天了</string>
+    <string name="text_cancel_account_tips2">注销后30天内我们将继续为您保留账号信息在\n此期间登录账号将自动取消注销，在30天后已\n注销您也可以通过联系我们的客服进行账号找\n回。\n\n您也可以给我们提供意见反馈，与蔚刻一起成\n长。</string>
+    <string name="tips_plan_close">您还未打开计划，将无法自动出餐，确定保存吗？</string>
+    <string name="text_plan_null">设备数据为空</string>
+    <string name="net_error">获取数据失败</string>
+    <string name="isNewVersion">已是最新版本</string>
+    <string name="isUpdate">可升级</string>
+    <string name="isUpdating">正在升级中,请勿退出</string>
+
+    <string name="update">OTA升级</string>
+
+    <string name="current_version">当前版本号</string>
+    <string name="Tips">温馨提示:</string>
+    <string name="Tips1">您正在更新固件，在升级过程中，</string>
+    <string name="Tips2">1.请确保WiFI连接正常:</string>
+    <string name="Tips3">2.设备保持接通电源状态</string>
+    <string name="Tips4">3.APP保持停留在当前页面</string>
+    <string name="Tips5">4.升级过程中设备功能将暂停使用</string>
+    <string name="now_update">立即更新</string>
+    <string name="update_fail">固件升级失败</string>
+    <string name="update_success">固件升级成功</string>
+
+    <string name="please_try_update">固件升级失败，请检查:</string>
+    <string name="please_try_update2">2.硬件设备是否保持接通电源状态;</string>
+    <string name="please_try_update1">1.WiFi连接是否正常;</string>
+    <string name="please_try_update3">3.若以上均正常，还是无法升级，请从您原购买渠道联系客服解决</string>
+    <string name="please_try_update4">"  注: 若Wi-Fi连接恢复正常，设备正常通电，将会默认进入升级状态，继续进行固件升级，您无需操作。"</string>
+    <string name="device_not_online">设备不在线，无法升级</string>
+    <string name="battery_mode_not">电池模式下无法升级</string>
+    <string name="isDownload">正在下载中....</string>
+    <string name="new_version">最新版本</string>
+    <string name="query_fail">查询失败</string>
+
+    <string-array name="select_home_mode_array">
+        <item>单猫家庭</item>
+        <item>单狗家庭</item>
+        <item>两猫家庭</item>
+        <item>三猫家庭</item>
+    </string-array>
+
+    <string-array name="feed_select_home_mode_array">
+        <item>猫模式</item>
+        <item>狗模式</item>
+    </string-array>
+
+    <string-array name="select_sex_array">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+    <string-array name="select_pet_sex_array">
+        <item>mm</item>
+        <item>gg</item>
+    </string-array>
+
+    <string-array name="select_label_array">
+        <item>早餐</item>
+        <item>午餐</item>
+        <item>晚餐</item>
+        <item>夜宵</item>
+    </string-array>
+
+    <string-array name="work_array">
+        <item>IT互联网技术</item>
+        <item>电子/通信</item>
+        <item>产品</item>
+        <item>运营/客服</item>
+        <item>销售</item>
+        <item>人事/行政/法务</item>
+        <item>会计</item>
+        <item>生产制造</item>
+        <item>生活服务/零售</item>
+        <item>餐饮</item>
+        <item>酒店/旅游</item>
+        <item>教育培训</item>
+        <item>设计</item>
+        <item>房地产/建筑</item>
+        <item>影视/传媒</item>
+        <item>市场</item>
+        <item>供应链/物流</item>
+        <item>采购/贸易</item>
+        <item>医疗健康</item>
+        <item>金融</item>
+        <item>咨询/翻译/法律</item>
+        <item>农业/环保</item>
+        <item>高级管理</item>
+        <item>生物医药/医疗</item>
+        <item>政府/非盈利机</item>
+
+    </string-array>
+</resources>

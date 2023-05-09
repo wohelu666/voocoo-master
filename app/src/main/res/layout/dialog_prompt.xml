@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rect_corner_white"
+    android:gravity="center_horizontal"
+    android:paddingHorizontal="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_error_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/color_000000"
+        android:text="@string/text_dev_is_offline"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/btn_ensure"
+        android:layout_width="250dp"
+        android:layout_height="42dp"
+        android:layout_margin="20dp"
+        android:textAllCaps="false"
+        android:padding="10dp"
+        android:background="@drawable/bg_btn_able"
+        android:text="@string/ensure"
+        android:textColor="@color/color_ffffff" />
+
+</LinearLayout>

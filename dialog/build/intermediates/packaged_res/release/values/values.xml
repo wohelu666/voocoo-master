@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black_de">#DE000000</color>
+    <color name="cardBodyColor">#FFFFFF</color>
+    <color name="cardBodyColor_gray">#cccccc</color>
+    <color name="cardShadowColor_1">#00222222</color>
+    <color name="cardShadowColor_2">#02222222</color>
+    <color name="cardShadowColor_3">#10222222</color>
+    <color name="cardShadowColor_4">#14222222</color>
+    <color name="cardShadowColor_5">#15222222</color>
+    <color name="cardShadowColor_6">#19222222</color>
+    <color name="cardShadowColor_7">#1b222222</color>
+    <color name="cardShadowColor_8">#20222222</color>
+    <color name="card_background">#ffffff</color>
+    <color name="card_shadow">#10000000</color>
+    <color name="dialogutil_bg_white">#ffffff</color>
+    <color name="dialogutil_btn_alert">#222222</color>
+    <color name="dialogutil_ios_btn_normal">#ffffff</color>
+    <color name="dialogutil_ios_btn_pressed">#eeeeee</color>
+    <color name="dialogutil_ios_btntext_blue">#007aff</color>
+    <color name="dialogutil_line_dd">#9FA6BD</color>
+    <color name="dialogutil_text_black">#333333</color>
+    <color name="dialogutil_text_black_light">#666666</color>
+    <color name="dialogutil_text_black_lighter">#999999</color>
+    <color name="dialogutil_text_gray">#999999</color>
+    <color name="dialogutil_text_gray_light">#B3B3B3</color>
+    <color name="dialogutil_text_input_44">#282A30</color>
+    <color name="dialogutil_text_item_33">#333333</color>
+    <color name="dialogutil_text_msg_33">#333333</color>
+    <color name="dialogutil_text_title_11">#111111</color>
+    <color name="lite_blue">#ff359ff2</color>
+    <color name="window_background">#00000000</color>
+    <dimen name="action_button_height">32dp</dimen>
+    <dimen name="action_button_min_width">56dp</dimen>
+    <dimen name="action_button_padding_horizontal">4dp</dimen>
+    <dimen name="action_button_text_size">14sp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="cardPadding">1px</dimen>
+    <dimen name="cardRadius">@dimen/dialogutil_round_corner</dimen>
+    <dimen name="dialogutil_btn_txt_size">14sp</dimen>
+    <dimen name="dialogutil_input_txt_size">16sp</dimen>
+    <dimen name="dialogutil_item_txt_size">14sp</dimen>
+    <dimen name="dialogutil_line_1px">1px</dimen>
+    <dimen name="dialogutil_msg_txt_size">14sp</dimen>
+    <dimen name="dialogutil_round_corner">16dp</dimen>
+    <dimen name="dialogutil_title_txt_size">17sp</dimen>
+    <dimen name="shadowBottom">1px</dimen>
+    <dimen name="shadowRight">1px</dimen>
+    <dimen name="shadowTop">1px</dimen>
+    <dimen name="shadowleft">1px</dimen>
+    <string name="app_name">dialog</string>
+    <string name="dialogutil_btn_cancel">cancel</string>
+    <string name="dialogutil_btn_neutral">neutral</string>
+    <string name="dialogutil_btn_sure">sure</string>
+    <string name="dialogutil_downloading">downloading</string>
+    <string name="dialogutil_loading">loading</string>
+    <string name="dialogutil_uploading">uploading</string>
+    <style name="ActionButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/action_button_height</item>
+        <item name="android:minWidth">@dimen/action_button_min_width</item>
+        <item name="android:paddingLeft">@dimen/action_button_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/action_button_padding_horizontal</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:textSize">@dimen/action_button_text_size</item>
+    </style>
+    <style name="MyDialog" parent="AlertDialog.AppCompat.Light">
+            <item name="android:windowFrame">@null</item>
+            <item name="android:windowNoTitle">true</item>
+            <!--<item name="android:windowBackground">@drawable/hint_img</item>-->
+            <item name="android:windowIsFloating">true</item>
+            <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Widget.GifMoviewView" parent="@android:style/Widget"/>
+    <style name="ani_bottom" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_in</item>  <!--进入时的动画-->
+        <item name="android:windowExitAnimation">@anim/pop_out</item>    <!--退出时的动画-->
+    </style>
+    <style name="dialog_center" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter_center</item>  <!--进入时的动画-->
+        <item name="android:windowExitAnimation">@anim/dialog_exit_center</item>    <!--退出时的动画-->
+    </style>
+    <style name="dialogutil_dialog_activity_style" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <!--设置状态栏颜色-->
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+
+    </style>
+    <style name="dialogutil_md_innput">
+        <item name="android:cursorVisible">true</item>
+        <item name="android:textColor">@color/dialogutil_text_gray_light</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:padding">13dp</item>
+        <item name="android:textSize">@dimen/dialogutil_input_txt_size</item>
+        <item name="android:textColor">@color/dialogutil_text_input_44</item>
+    </style>
+    <style name="mystyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>  <!--进入时的动画-->
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>    <!--退出时的动画-->
+    </style>
+    <style name="notitle">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <declare-styleable name="CustomTheme">
+        <attr format="reference" name="gifMoviewViewStyle"/>
+    </declare-styleable>
+    <declare-styleable name="GifMoviewView">
+        <attr format="reference" name="gif"/>
+        <attr format="boolean" name="paused"/>
+    </declare-styleable>
+</resources>

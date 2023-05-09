@@ -1,0 +1,4 @@
+int id activity_image_view 0x0
+int id iv_image 0x0
+int layout zxing__qrcode_show_activity 0x0
+int string app_name 0x0

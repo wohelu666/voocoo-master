@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">shenshiqu</string>
+    <string name="ssq_cancel">取消</string>
+    <string name="ssq_ok">确认</string>
+</resources>

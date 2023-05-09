@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dialogutil_btn_cancel">キャンセル</string>
+    <string name="dialogutil_btn_neutral">もう一度見てください</string>
+    <string name="dialogutil_btn_sure"> OK </string>
+    <string name="dialogutil_downloading">ダウンロード</string>
+    <string name="dialogutil_loading">読み込み中</string>
+    <string name="dialogutil_uploading">アップロード</string>
+</resources>

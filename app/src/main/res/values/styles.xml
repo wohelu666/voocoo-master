@@ -1,0 +1,55 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:screenOrientation">portrait</item>
+    </style>
+
+    <style name="AppDialog" parent="AlertDialog.AppCompat">
+        <item name="android:windowBackground">@drawable/rect_dialog</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimAmount">0.7</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="NoAnimationDialog" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+    </style>
+
+    <style name="AppDialog.Bottom" parent="AppDialog">
+        <item name="android:windowBackground">@color/color_ffffff</item>
+        <item name="android:windowAnimationStyle">@style/DialogBottomAnim</item>
+    </style>
+
+    <style name="DialogBottomAnim" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_out</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="AppTheme">
+        <item name="homeAsUpIndicator">@mipmap/back_black_ic</item>
+        <item name="android:homeAsUpIndicator">@mipmap/back_black_ic</item>
+        <item name="navigationIcon">@mipmap/back_black_ic</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="overlapAnchor">false</item>
+        <!-- 弹出层背景颜色 -->
+        <item name="android:background">@color/color_424242</item>
+        <!-- 设置弹出菜单文字颜色 -->
+        <item name="android:textColor">@color/color_ffffff</item>
+    </style>
+
+
+</resources>

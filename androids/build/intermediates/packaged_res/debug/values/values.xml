@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="androids_api27_config_minScalingSpan">27mm</dimen>
+    <declare-styleable name="BitmapScrollPicker">
+        <!-- 绘制图片的方式-->
+        <attr format="string" name="spv_draw_bitmap_mode">
+            <enum name="fill" value="1"/>
+            <enum name="center" value="2"/>
+            <enum name="size" value="3"/>
+        </attr>
+        <!-- 绘制图片的方式为size时，指定的图片绘制大小-->
+        <attr format="dimension" name="spv_draw_bitmap_width"/>
+        <attr format="dimension" name="spv_draw_bitmap_height"/>
+        <!-- item内容缩放倍数-->
+        <attr format="float" name="spv_min_scale"/>
+        <attr format="float" name="spv_max_scale"/>
+    </declare-styleable>
+    <declare-styleable name="MaskImageView">
+        <!-- 遮罩的层面:背景\前景图-->
+        <attr format="enum" name="miv_mask_level">
+            <enum name="background" value="1"/>
+            <enum name="foreground" value="2"/>
+        </attr>
+        <!-- 设置了setClickable(true)才生效,默认开启遮罩-->
+        <attr format="boolean" name="miv_is_show_mask_on_click"/>
+        <attr format="color" name="miv_mask_color"/>
+        <!--是否忽略图片的透明度，默认为true,透明部分不显示遮罩 -->
+        <attr format="boolean" name="miv_is_ignore_alpha"/>
+        <!--按下时view的透明度-->
+        <attr format="float" name="miv_pressed_alpha"/>
+
+        <attr name="sel_background"/>
+        <attr name="sel_background_pressed"/>
+        <attr name="sel_background_selected"/>
+        <attr name="sel_background_disable"/>
+        <attr name="sel_background_shape"/>
+        <attr name="sel_background_corners"/>
+        <attr name="sel_background_corner_topLeft"/>
+        <attr name="sel_background_corner_topRight"/>
+        <attr name="sel_background_corner_bottomLeft"/>
+        <attr name="sel_background_corner_bottomRight"/>
+        <attr name="sel_background_border_color"/>
+        <attr name="sel_background_border_width"/>
+        <attr name="sel_background_border_pressed"/>
+        <attr name="sel_background_border_selected"/>
+        <attr name="sel_background_border_disable"/>
+        <attr name="sel_background_ripple"/>
+        <attr name="sel_background_ripple_mask"/>
+        <attr name="sel_background_ripple_mask_shape"/>
+        <attr name="sel_background_ripple_mask_corners"/>
+        <attr name="sel_background_ripple_mask_corner_topLeft"/>
+        <attr name="sel_background_ripple_mask_corner_topRight"/>
+        <attr name="sel_background_ripple_mask_corner_bottomLeft"/>
+        <attr name="sel_background_ripple_mask_corner_bottomRight"/>
+    </declare-styleable>
+    <declare-styleable name="PaddingImageView">
+        <attr name="vp_content_width"/>
+        <attr name="vp_content_height"/>
+        <attr name="vp_content_padding_left"/>
+        <attr name="vp_content_padding_top"/>
+        <attr name="vp_content_padding_right"/>
+        <attr name="vp_content_padding_bottom"/>
+    </declare-styleable>
+    <declare-styleable name="PaddingTextView">
+        <attr name="vp_content_width"/>
+        <attr name="vp_content_height"/>
+        <attr name="vp_content_padding_left"/>
+        <attr name="vp_content_padding_top"/>
+        <attr name="vp_content_padding_right"/>
+        <attr name="vp_content_padding_bottom"/>
+    </declare-styleable>
+    <declare-styleable name="PaddingViewAttrs">
+        <!--src content的确切宽度，必填-->
+        <attr format="dimension" name="vp_content_width"/>
+        <!--src content的确切高度，必填-->
+        <attr format="dimension" name="vp_content_height"/>
+        <!--src content的padding，在未设置的情况下默认为居中效果-->
+        <attr format="dimension" name="vp_content_padding_left"/>
+        <attr format="dimension" name="vp_content_padding_top"/>
+        <attr format="dimension" name="vp_content_padding_right"/>
+        <attr format="dimension" name="vp_content_padding_bottom"/>
+    </declare-styleable>
+    <declare-styleable name="RatioImageView">
+
+        <!-- 宽度是否根据src图片的比例来测量（高度已知） -->
+        <attr format="boolean" name="riv_is_width_fix_drawable_size_ratio"/>
+        <!-- 高度是否根据src图片的比例来测量（宽度已知） -->
+        <attr format="boolean" name="riv_is_height_fix_drawable_size_ratio"/>
+        <!--当mIsWidthFitDrawableSizeRatio生效时，最大宽度-->
+        <attr format="dimension" name="riv_max_width_when_width_fix_drawable"/>
+        <!--当mIsHeightFitDrawableSizeRatio生效时-->
+        <attr format="dimension" name="riv_max_height_when_height_fix_drawable"/>
+        <!-- 高度设置，参考宽度，如0.5 , 表示 高度＝宽度×０.5 -->
+        <attr format="float" name="riv_height_to_width_ratio"/>
+        <!-- 宽度设置，参考高度，如0.5 , 表示 宽度＝高度×０.5 -->
+        <attr format="float" name="riv_width_to_height_ratio"/>
+        <!--宽度和高度,避免layout_width/layout_height会在超过屏幕尺寸时特殊处理的情况-->
+        <attr format="dimension" name="riv_width"/>
+        <attr format="dimension" name="riv_height"/>
+
+        <attr name="sel_background"/>
+        <attr name="sel_background_pressed"/>
+        <attr name="sel_background_selected"/>
+        <attr name="sel_background_disable"/>
+        <attr name="sel_background_shape"/>
+        <attr name="sel_background_corners"/>
+        <attr name="sel_background_corner_topLeft"/>
+        <attr name="sel_background_corner_topRight"/>
+        <attr name="sel_background_corner_bottomLeft"/>
+        <attr name="sel_background_corner_bottomRight"/>
+        <attr name="sel_background_border_color"/>
+        <attr name="sel_background_border_width"/>
+        <attr name="sel_background_border_pressed"/>
+        <attr name="sel_background_border_selected"/>
+        <attr name="sel_background_border_disable"/>
+        <attr name="sel_background_ripple"/>
+        <attr name="sel_background_ripple_mask"/>
+        <attr name="sel_background_ripple_mask_shape"/>
+        <attr name="sel_background_ripple_mask_corners"/>
+        <attr name="sel_background_ripple_mask_corner_topLeft"/>
+        <attr name="sel_background_ripple_mask_corner_topRight"/>
+        <attr name="sel_background_ripple_mask_corner_bottomLeft"/>
+        <attr name="sel_background_ripple_mask_corner_bottomRight"/>
+    </declare-styleable>
+    <declare-styleable name="RoundProgressBar">
+        <attr format="color" name="rpb_background"/>
+        <attr format="dimension" name="rpb_background_width"/>
+        <attr format="color" name="rpb_color"/>
+        <attr format="dimension" name="rpb_width"/>
+        <attr format="float" name="rpb_max_progress"/>
+        <attr format="float" name="rpb_progress"/>
+    </declare-styleable>
+    <declare-styleable name="SFrameLayout">
+        <attr name="sel_background"/>
+        <attr name="sel_background_pressed"/>
+        <attr name="sel_background_selected"/>
+        <attr name="sel_background_disable"/>
+        <attr name="sel_background_shape"/>
+        <attr name="sel_background_corners"/>
+        <attr name="sel_background_corner_topLeft"/>
+        <attr name="sel_background_corner_topRight"/>
+        <attr name="sel_background_corner_bottomLeft"/>
+        <attr name="sel_background_corner_bottomRight"/>
+        <attr name="sel_background_border_color"/>
+        <attr name="sel_background_border_width"/>
+        <attr name="sel_background_border_pressed"/>
+        <attr name="sel_background_border_selected"/>
+        <attr name="sel_background_border_disable"/>
+        <attr name="sel_background_ripple"/>
+        <attr name="sel_background_ripple_mask"/>
+        <attr name="sel_background_ripple_mask_shape"/>
+        <attr name="sel_background_ripple_mask_corners"/>
+        <attr name="sel_background_ripple_mask_corner_topLeft"/>
+        <attr name="sel_background_ripple_mask_corner_topRight"/>
+        <attr name="sel_background_ripple_mask_corner_bottomLeft"/>
+        <attr name="sel_background_ripple_mask_corner_bottomRight"/>
+    </declare-styleable>
+    <declare-styleable name="SLinearLayout">
+        <attr name="sel_background"/>
+        <attr name="sel_background_pressed"/>
+        <attr name="sel_background_selected"/>
+        <attr name="sel_background_disable"/>
+        <attr name="sel_background_shape"/>
+        <attr name="sel_background_corners"/>
+        <attr name="sel_background_corner_topLeft"/>
+        <attr name="sel_background_corner_topRight"/>
+        <attr name="sel_background_corner_bottomLeft"/>
+        <attr name="sel_background_corner_bottomRight"/>
+        <attr name="sel_background_border_color"/>
+        <attr name="sel_background_border_width"/>
+        <attr name="sel_background_border_pressed"/>
+        <attr name="sel_background_border_selected"/>
+        <attr name="sel_background_border_disable"/>
+        <attr name="sel_background_ripple"/>
+        <attr name="sel_background_ripple_mask"/>
+        <attr name="sel_background_ripple_mask_shape"/>
+        <attr name="sel_background_ripple_mask_corners"/>
+        <attr name="sel_background_ripple_mask_corner_topLeft"/>
+        <attr name="sel_background_ripple_mask_corner_topRight"/>
+        <attr name="sel_background_ripple_mask_corner_bottomLeft"/>
+        <attr name="sel_background_ripple_mask_corner_bottomRight"/>
+    </declare-styleable>
+    <declare-styleable name="SRelativeLayout">
+        <attr name="sel_background"/>
+        <attr name="sel_background_pressed"/>
+        <attr name="sel_background_selected"/>
+        <attr name="sel_background_disable"/>
+        <attr name="sel_background_shape"/>
+        <attr name="sel_background_corners"/>
+        <attr name="sel_background_corner_topLeft"/>
+        <attr name="sel_background_corner_topRight"/>
+        <attr name="sel_background_corner_bottomLeft"/>
+        <attr name="sel_background_corner_bottomRight"/>
+        <attr name="sel_background_border_color"/>
+        <attr name="sel_background_border_width"/>
+        <attr name="sel_background_border_pressed"/>
+        <attr name="sel_background_border_selected"/>
+        <attr name="sel_background_border_disable"/>
+        <attr name="sel_background_ripple"/>
+        <attr name="sel_background_ripple_mask"/>
+        <attr name="sel_background_ripple_mask_shape"/>
+        <attr name="sel_background_ripple_mask_corners"/>
+        <attr name="sel_background_ripple_mask_corner_topLeft"/>
+        <attr name="sel_background_ripple_mask_corner_topRight"/>
+        <attr name="sel_background_ripple_mask_corner_bottomLeft"/>
+        <attr name="sel_background_ripple_mask_corner_bottomRight"/>
+    </declare-styleable>
+    <declare-styleable name="STextView">
+        <attr format="color" name="stv_text_color_selected"/>
+        <attr format="color" name="stv_text_color_pressed"/>
+        <attr format="color" name="stv_text_color_disable"/>
+
+        <!-- 过时的配置，等于stv开头的属性-->
+        <attr format="color" name="mtv_text_color_pressed"/>
+        <attr format="color" name="mtv_text_color_disable"/>
+
+        <attr name="sel_background"/>
+        <attr name="sel_background_pressed"/>
+        <attr name="sel_background_selected"/>
+        <attr name="sel_background_disable"/>
+        <attr name="sel_background_shape"/>
+        <attr name="sel_background_corners"/>
+        <attr name="sel_background_corner_topLeft"/>
+        <attr name="sel_background_corner_topRight"/>
+        <attr name="sel_background_corner_bottomLeft"/>
+        <attr name="sel_background_corner_bottomRight"/>
+        <attr name="sel_background_border_color"/>
+        <attr name="sel_background_border_width"/>
+        <attr name="sel_background_border_pressed"/>
+        <attr name="sel_background_border_selected"/>
+        <attr name="sel_background_border_disable"/>
+        <attr name="sel_background_ripple"/>
+        <attr name="sel_background_ripple_mask"/>
+        <attr name="sel_background_ripple_mask_shape"/>
+        <attr name="sel_background_ripple_mask_corners"/>
+        <attr name="sel_background_ripple_mask_corner_topLeft"/>
+        <attr name="sel_background_ripple_mask_corner_topRight"/>
+        <attr name="sel_background_ripple_mask_corner_bottomLeft"/>
+        <attr name="sel_background_ripple_mask_corner_bottomRight"/>
+    </declare-styleable>
+    <declare-styleable name="ScrollPickerView">
+        <!-- 中间item的背景-->
+        <attr format="reference|color" name="spv_center_item_background"/>
+        <!-- 可见的item数量，默认为3个-->
+        <attr format="integer" name="spv_visible_item_count"/>
+        <!-- 中间item的位置,默认为 mVisibleItemCount / 2-->
+        <attr format="integer" name="spv_center_item_position"/>
+        <!-- 是否循环滚动，默认为true，开启-->
+        <attr format="boolean" name="spv_is_circulation"/>
+        <!-- 不允许父组件拦截触摸事件，设置为true为不允许拦截，此时该设置才生效 -->
+        <attr format="boolean" name="spv_disallow_intercept_touch"/>
+        <!-- 滚动的方向-->
+        <attr format="string" name="spv_orientation">
+            <enum name="horizontal" value="1"/>
+            <enum name="vertical" value="2"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="SelectorAttrs">
+        <!-- selector相关属性-->
+        <!-- 背景状态 -->
+        <attr format="reference|color" name="sel_background_pressed"/>
+        <attr format="reference|color" name="sel_background_selected"/>
+        <attr format="reference|color" name="sel_background_disable"/>
+
+        <!-- 背景形状 -->
+        <attr format="enum" name="sel_background_shape">
+            <enum name="rect" value="0"/>
+            <enum name="oval" value="1"/>
+            <enum name="line" value="2"/>
+            <enum name="ring" value="3"/>
+        </attr>
+        <!-- 背景圆角 -->
+        <attr format="dimension" name="sel_background_corners"/>
+        <attr format="dimension" name="sel_background_corner_topLeft"/>
+        <attr format="dimension" name="sel_background_corner_topRight"/>
+        <attr format="dimension" name="sel_background_corner_bottomLeft"/>
+        <attr format="dimension" name="sel_background_corner_bottomRight"/>
+
+        <!-- 背景边框默认状态 -->
+        <attr format="color" name="sel_background_border_color"/>
+        <attr format="dimension" name="sel_background_border_width"/>
+        <!-- 背景边框状态 -->
+        <attr format="color" name="sel_background_border_pressed"/>
+        <attr format="color" name="sel_background_border_selected"/>
+        <attr format="color" name="sel_background_border_disable"/>
+
+        <!-- ripple水波纹效果-->
+        <attr format="reference|color" name="sel_background_ripple"/>
+        <attr format="reference|color" name="sel_background_ripple_mask"/>
+        <!-- ripple mask形状(仅在sel_background_ripple_mask为color时生效)-->
+        <attr format="enum" name="sel_background_ripple_mask_shape">
+            <enum name="rect" value="0"/>
+            <enum name="oval" value="1"/>
+            <enum name="line" value="2"/>
+            <enum name="ring" value="3"/>
+        </attr>
+        <!-- ripple mask圆角 -->
+        <attr format="dimension" name="sel_background_ripple_mask_corners"/>
+        <attr format="dimension" name="sel_background_ripple_mask_corner_topLeft"/>
+        <attr format="dimension" name="sel_background_ripple_mask_corner_topRight"/>
+        <attr format="dimension" name="sel_background_ripple_mask_corner_bottomLeft"/>
+        <attr format="dimension" name="sel_background_ripple_mask_corner_bottomRight"/>
+
+        <!--该属性已过时，被废弃-->
+        <attr format="color" name="sel_background"/>
+
+    </declare-styleable>
+    <declare-styleable name="ShapeImageView">
+        <attr format="enum" name="siv_shape">
+            <enum name="rect" value="1"/>
+            <enum name="circle" value="2"/>
+            <enum name="oval" value="3"/>
+        </attr>
+        <attr format="dimension" name="siv_round_radius"/>
+        <attr format="dimension" name="siv_round_radius_leftTop"/>
+        <attr format="dimension" name="siv_round_radius_leftBottom"/>
+        <attr format="dimension" name="siv_round_radius_rightTop"/>
+        <attr format="dimension" name="siv_round_radius_rightBottom"/>
+        <attr format="dimension" name="siv_border_size"/>
+        <attr format="color" name="siv_border_color"/>
+
+        <attr name="sel_background"/>
+        <attr name="sel_background_pressed"/>
+        <attr name="sel_background_selected"/>
+        <attr name="sel_background_disable"/>
+        <attr name="sel_background_shape"/>
+        <attr name="sel_background_corners"/>
+        <attr name="sel_background_corner_topLeft"/>
+        <attr name="sel_background_corner_topRight"/>
+        <attr name="sel_background_corner_bottomLeft"/>
+        <attr name="sel_background_corner_bottomRight"/>
+        <attr name="sel_background_border_color"/>
+        <attr name="sel_background_border_width"/>
+        <attr name="sel_background_border_pressed"/>
+        <attr name="sel_background_border_selected"/>
+        <attr name="sel_background_border_disable"/>
+        <attr name="sel_background_ripple"/>
+        <attr name="sel_background_ripple_mask"/>
+        <attr name="sel_background_ripple_mask_shape"/>
+        <attr name="sel_background_ripple_mask_corners"/>
+        <attr name="sel_background_ripple_mask_corner_topLeft"/>
+        <attr name="sel_background_ripple_mask_corner_topRight"/>
+        <attr name="sel_background_ripple_mask_corner_bottomLeft"/>
+        <attr name="sel_background_ripple_mask_corner_bottomRight"/>
+    </declare-styleable>
+    <declare-styleable name="StringScrollPicker">
+        <!--文字渐变大小-->
+        <attr format="dimension" name="spv_min_text_size"/>
+        <attr format="dimension" name="spv_max_text_size"/>
+        <!--文字渐变颜色-->
+        <attr format="color" name="spv_start_color"/>
+        <attr format="color" name="spv_end_color"/>
+        <!--文字最大行宽-->
+        <attr format="dimension" name="spv_max_line_width"/>
+        <!--文字对齐方式-->
+        <attr format="enum" name="spv_alignment">
+            <enum name="center" value="1"/>
+            <enum name="left" value="2"/>
+            <enum name="right" value="3"/>
+        </attr>
+    </declare-styleable>
+</resources>

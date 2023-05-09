@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/custom_toolbar"
+            layout="@layout/custom_toolbar" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/text_connect_with_dev"
+            android:textColor="#282A30"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:drawablePadding="8dp"
+            android:text="@string/text_connect_with_dev_tips"
+            android:textColor="#6A6B71"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="60dp"
+            android:layout_height="wrap_content">
+
+            <com.voocoo.pet.common.widgets.TempProgressBar
+                android:id="@+id/circle_progress"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_centerInParent="true"
+                app:backColor="#DCE1EE"
+                app:backWidth="18dp"
+                app:progColor="#FB7E37"
+                app:progWidth="20dp"
+                app:progress2="85">
+
+            </com.voocoo.pet.common.widgets.TempProgressBar>
+
+            <TextView
+                android:id="@+id/tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="12%"
+                android:textColor="#6A6B71"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_step1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@mipmap/icon_sel"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/device_near_luy_tips1"
+                android:textColor="#282A30"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_step2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@mipmap/icon_sel"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/device_near_luy_tips2"
+                android:textColor="#282A30"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_step3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@mipmap/icon_sel"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/device_near_luy_tips3"
+                android:textColor="#282A30"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_step4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@mipmap/icon_sel"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/device_near_luy_tips4"
+                android:textColor="#282A30"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

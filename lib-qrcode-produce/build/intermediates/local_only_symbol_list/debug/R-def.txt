@@ -1,0 +1,6 @@
+R_DEF: Internal format may change without notice
+local
+id activity_image_view
+id iv_image
+layout zxing__qrcode_show_activity
+string app_name

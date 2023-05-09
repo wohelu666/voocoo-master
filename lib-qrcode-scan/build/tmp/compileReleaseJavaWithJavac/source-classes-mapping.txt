@@ -1,0 +1,36 @@
+com/zbar/lib/camera/PreviewCallback.java
+ com.zbar.lib.camera.PreviewCallback
+com/zbar/lib/camera/AutoFocusCallback.java
+ com.zbar.lib.camera.AutoFocusCallback
+com/zbar/lib/bitmap/PlanarYUVLuminanceSource.java
+ com.zbar.lib.bitmap.PlanarYUVLuminanceSource
+com/zbar/lib/BuildConfig.java
+ com.zbar.lib.BuildConfig
+com/xlink/ext/decode/CaptureActivityHandler.java
+ com.xlink.ext.decode.CaptureActivityHandler
+ com.xlink.ext.decode.CaptureActivityHandler$State
+com/xlink/ext/decode/DecodeThread.java
+ com.xlink.ext.decode.DecodeThread
+com/zbar/lib/camera/CameraManager.java
+ com.zbar.lib.camera.CameraManager
+com/zbar/lib/bitmap/InvertedLuminanceSource.java
+ com.zbar.lib.bitmap.InvertedLuminanceSource
+com/zbar/lib/ZbarManager.java
+ com.zbar.lib.ZbarManager
+com/zbar/lib/camera/FlashlightManager.java
+ com.zbar.lib.camera.FlashlightManager
+com/zbar/lib/bitmap/LuminanceSource.java
+ com.zbar.lib.bitmap.LuminanceSource
+com/xlink/ext/CaptureBaseActivity.java
+ com.xlink.ext.CaptureBaseActivity
+ com.xlink.ext.CaptureBaseActivity$1
+com/xlink/ext/decode/InactivityTimer.java
+ com.xlink.ext.decode.InactivityTimer
+ com.xlink.ext.decode.InactivityTimer$1
+ com.xlink.ext.decode.InactivityTimer$DaemonThreadFactory
+com/xlink/ext/decode/DecodeHandler.java
+ com.xlink.ext.decode.DecodeHandler
+com/xlink/ext/decode/FinishListener.java
+ com.xlink.ext.decode.FinishListener
+com/zbar/lib/camera/CameraConfigurationManager.java
+ com.zbar.lib.camera.CameraConfigurationManager

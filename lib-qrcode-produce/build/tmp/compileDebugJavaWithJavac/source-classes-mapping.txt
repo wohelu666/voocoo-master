@@ -1,0 +1,8 @@
+com/zxing/qrcode/produce/BuildConfig.java
+ com.zxing.qrcode.produce.BuildConfig
+com/zxing/qrcode/produce/GenerateQrCodeHelp.java
+ com.zxing.qrcode.produce.GenerateQrCodeHelp
+com/zxing/qrcode/produce/DESencryptionUtil.java
+ com.zxing.qrcode.produce.DESencryptionUtil
+com/zxing/qrcode/produce/QrCodeShowActivity.java
+ com.zxing.qrcode.produce.QrCodeShowActivity

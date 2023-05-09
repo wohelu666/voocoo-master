@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:guidance_text_color="@color/color_tab_select"
+        app:guidance_view_bg_color="@android:color/transparent"
+        app:load_text="加载更多"
+        app:progress_bar_color="@color/color_tab_select"
+        app:refresh_text="下拉刷新">
+        <ScrollView
+            android:scrollbars="none"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/ly_empty_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:src="@mipmap/not_dev_bg" />
+
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="46dp"
+                    android:layout_marginRight="26dp"
+                    android:layout_marginBottom="80dp"
+                    android:background="@drawable/bg_btn_able"
+                    android:text="@string/text_add_dev"
+                    android:textColor="@color/color_ffffff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_main_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/ly_todo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_wait_to_do"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_wait_to_do_num"
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/oval_green"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="#fff"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ly_hav_todo"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/rect_corner_white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <!-- <androidx.recyclerview.widget.RecyclerView
+                             android:id="@+id/rv_todo"
+                             android:layout_width="match_parent"
+                             android:layout_height="100dp"
+                             android:orientation="vertical" />-->
+
+                        <LinearLayout
+                            android:id="@+id/rv_todo"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/ly_wait_todo_item1"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="10dp"
+                                    android:layout_marginLeft="16dp"
+                                    android:background="#FB7E37" />
+
+                                <TextView
+                                    android:id="@+id/tv_content"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="7dp"
+                                    android:layout_weight="3"
+                                    android:maxLines="2"
+                                    android:ellipsize="end"
+                                    android:gravity="center_vertical"
+                                    android:text=""
+                                    android:textColor="#282A30"
+                                    android:textSize="13sp" />
+
+
+                                <TextView
+                                    android:id="@+id/tv_time"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="7dp"
+                                    android:layout_marginRight="16dp"
+                                    android:layout_weight="1"
+                                    android:gravity="right"
+                                    android:text=""
+                                    android:textColor="#9FA6BD"
+                                    android:textSize="11sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ly_wait_todo_item2"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="2dp"
+                                    android:layout_height="10dp"
+                                    android:layout_marginLeft="16dp"
+                                    android:background="#FB7E37" />
+
+                                <TextView
+                                    android:id="@+id/tv_content2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="7dp"
+                                    android:layout_weight="3"
+                                    android:gravity="center_vertical"
+                                    android:text=""
+                                    android:maxLines="2"
+                                    android:ellipsize="end"
+                                    android:textColor="#282A30"
+                                    android:textSize="13sp" />
+
+
+                                <TextView
+                                    android:id="@+id/tv_time2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="7dp"
+                                    android:layout_marginRight="16dp"
+                                    android:layout_weight="1"
+                                    android:gravity="right"
+                                    android:text=""
+                                    android:textColor="#9FA6BD"
+                                    android:textSize="11sp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tv_not_todo"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/rect_corner_white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:drawableLeft="@mipmap/icon_ok"
+                            android:drawablePadding="16dp"
+                            android:gravity="center"
+                            android:paddingTop="32dp"
+                            android:paddingBottom="32dp"
+                            android:text="@string/text_not_wait_to_do"
+                            android:textColor="#282A30"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="32sp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_my_devices"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_devices"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:textColor="#6A6B71"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/iv_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/add_dev_icon" />
+                </LinearLayout>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="370dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bgView"
+    android:layout_width="39dp"
+    android:layout_height="39dp">
+
+    <com.voocoo.pet.common.widgets.RoundImageView
+        android:id="@+id/iv_head"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        app:type="circle"
+        android:src="@mipmap/ic_launcher"/>
+
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:src="@mipmap/sel_ic" />
+</RelativeLayout>

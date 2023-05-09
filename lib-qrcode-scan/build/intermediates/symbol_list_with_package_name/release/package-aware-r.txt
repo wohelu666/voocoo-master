@@ -1,0 +1,9 @@
+com.zbar.lib
+id auto_focus
+id decode
+id decode_failed
+id decode_succeeded
+id quit
+id restart_preview
+raw beep
+string app_name

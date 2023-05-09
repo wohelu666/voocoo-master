@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zxing.qrcode.produce">
+
+    <application android:allowBackup="true">
+
+        <activity
+            android:name="com.zxing.qrcode.produce.QrCodeShowActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent">
+        </activity>
+
+    </application>
+
+</manifest>

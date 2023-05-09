@@ -1,0 +1,46 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.zbar.lib" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="19"
+6-->D:\AndroidStudioProjects\voocoomaster\lib-qrcode-scan\src\main\AndroidManifest.xml
+7        android:targetSdkVersion="30" />
+7-->D:\AndroidStudioProjects\voocoomaster\lib-qrcode-scan\src\main\AndroidManifest.xml
+8
+9    <uses-permission android:name="android.permission.CAMERA" />
+9-->D:\AndroidStudioProjects\voocoomaster\lib-qrcode-scan\src\main\AndroidManifest.xml:5:5-65
+9-->D:\AndroidStudioProjects\voocoomaster\lib-qrcode-scan\src\main\AndroidManifest.xml:5:22-62
+10    <uses-permission android:name="android.permission.FLASHLIGHT" />
+10-->D:\AndroidStudioProjects\voocoomaster\lib-qrcode-scan\src\main\AndroidManifest.xml:6:5-69
+10-->D:\AndroidStudioProjects\voocoomaster\lib-qrcode-scan\src\main\AndroidManifest.xml:6:22-66
+11    <uses-permission android:name="android.permission.VIBRATE" />
+11-->D:\AndroidStudioProjects\voocoomaster\lib-qrcode-scan\src\main\AndroidManifest.xml:7:5-66
+11-->D:\AndroidStudioProjects\voocoomaster\lib-qrcode-scan\src\main\AndroidManifest.xml:7:22-63
+12    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+12-->D:\AndroidStudioProjects\voocoomaster\lib-qrcode-scan\src\main\AndroidManifest.xml:8:5-84
+12-->D:\AndroidStudioProjects\voocoomaster\lib-qrcode-scan\src\main\AndroidManifest.xml:8:22-81
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->D:\AndroidStudioProjects\voocoomaster\lib-qrcode-scan\src\main\AndroidManifest.xml:9:5-81
+13-->D:\AndroidStudioProjects\voocoomaster\lib-qrcode-scan\src\main\AndroidManifest.xml:9:22-78
+14
+15    <uses-feature android:name="android.hardware.camera" />
+15-->D:\AndroidStudioProjects\voocoomaster\lib-qrcode-scan\src\main\AndroidManifest.xml:11:5-60
+15-->D:\AndroidStudioProjects\voocoomaster\lib-qrcode-scan\src\main\AndroidManifest.xml:11:19-57
+16    <uses-feature android:name="android.hardware.camera.autofocus" />
+16-->D:\AndroidStudioProjects\voocoomaster\lib-qrcode-scan\src\main\AndroidManifest.xml:12:5-70
+16-->D:\AndroidStudioProjects\voocoomaster\lib-qrcode-scan\src\main\AndroidManifest.xml:12:19-67
+17
+18    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+18-->D:\AndroidStudioProjects\voocoomaster\lib-qrcode-scan\src\main\AndroidManifest.xml:14:5-75
+18-->D:\AndroidStudioProjects\voocoomaster\lib-qrcode-scan\src\main\AndroidManifest.xml:14:22-72
+19    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+19-->D:\AndroidStudioProjects\voocoomaster\lib-qrcode-scan\src\main\AndroidManifest.xml:15:5-80
+19-->D:\AndroidStudioProjects\voocoomaster\lib-qrcode-scan\src\main\AndroidManifest.xml:15:22-77
+20
+21    <application android:allowBackup="true" >
+21-->D:\AndroidStudioProjects\voocoomaster\lib-qrcode-scan\src\main\AndroidManifest.xml:17:5-18:19
+21-->D:\AndroidStudioProjects\voocoomaster\lib-qrcode-scan\src\main\AndroidManifest.xml:17:18-44
+22    </application>
+23
+24</manifest>
